@@ -1,0 +1,52 @@
+/* Gallery.css */
+.gallery-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .cards-wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    z-index: 0;
+  }
+  
+  .cards {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .card {
+    min-width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgb(0, 110, 255, 0.9);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+  .nav-button:first-of-type {
+    left: 10px;
+  }
+  
+  .nav-button:last-of-type {
+    right: 10px;
+  }
+  
+  .cards-wrapper {
+    pointer-events: none;
+  }
+
+  .cards {
+    pointer-events: all;
+  }
+  
