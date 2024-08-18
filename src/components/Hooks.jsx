@@ -175,6 +175,41 @@ const UseLayoutEffectComponent = () => {
     );
 }
 
+const UseImperativeHandleComponent = () => {
+    return (
+        <div>
+            <h1>useImperativeHandle</h1>
+            <h3>Coming Soon...</h3>
+        </div>
+    );
+}
+
+const UseDebugValueComponent = () => {
+    return (
+        <div>
+            <h1>useDebugValue</h1>
+            <h3>For Developer tools.</h3>
+        </div>
+    );
+}
+
+const UseIdComponent = () => {
+    const id = useId();
+    return (
+        <div>
+            <h1>useId</h1>
+            <h3>{id}</h3>
+        </div>
+    );
+}
+
+
+// 12. useInsertionEffect
+// 13. useDeferredValue
+// 14. useSyncExternalStore
+// 15. useTransition
+
+
 const HooksComponents = [<UseStateComopnent />, <UseReducerComponent />, <UseEffectComponent />, <UseContextComponent />, <UseMemoComponent />, <UseCallbackComponent />, <UseRefComponent />, <UseLayoutEffectComponent />];
 
 export {HooksComponents, Hooks, UseStateComopnent, UseReducerComponent, UseEffectComponent, UseContextComponent, UseMemoComponent, UseCallbackComponent, UseRefComponent, UseLayoutEffectComponent};
